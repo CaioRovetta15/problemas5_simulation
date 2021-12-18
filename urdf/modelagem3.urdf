@@ -1,0 +1,496 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="modelagem3">
+  <link
+    name="corpo">
+    <inertial>
+      <origin
+        xyz="-0.0157334965830891 -0.459999999999994 -0.0514316049391388"
+        rpy="0 0 0" />
+      <mass
+        value="831.187091350493" />
+      <inertia
+        ixx="21.5625063866625"
+        ixy="-7.94323452544889E-14"
+        ixz="2.30052110058882"
+        iyy="41.3563147714441"
+        iyz="3.89735598441964E-15"
+        izz="41.8913865465296" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/corpo.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="1 1 1 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/corpo.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RodaF1">
+    <inertial>
+      <origin
+        xyz="-0.0364997754572476 -1.11022302462516E-16 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.79874269449956" />
+      <inertia
+        ixx="0.015878498443145"
+        ixy="2.55935364314535E-17"
+        ixz="-2.72472956945357E-17"
+        iyy="0.0083023953948364"
+        iyz="3.25260651745651E-19"
+        izz="0.0083023953948364" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaF1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaF1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eixoF1"
+    type="revolute">
+    <origin
+      xyz="-0.28942 -0.667 -0.20667"
+      rpy="1.6032 0 1.5708" />
+    <parent
+      link="corpo" />
+    <child
+      link="RodaF1" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RodaF2">
+    <inertial>
+      <origin
+        xyz="-0.0364997754572478 -1.11022302462516E-16 1.11022302462516E-16"
+        rpy="0 0 0" />
+      <mass
+        value="1.79874269449957" />
+      <inertia
+        ixx="0.015878498443145"
+        ixy="1.86814051950158E-17"
+        ixz="-3.24430490955079E-17"
+        iyy="0.00830239539483641"
+        iyz="6.50521303491303E-19"
+        izz="0.00830239539483641" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaF2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaF2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eixoF2"
+    type="revolute">
+    <origin
+      xyz="-0.28942 -0.18 -0.20667"
+      rpy="1.8348 0 1.5708" />
+    <parent
+      link="corpo" />
+    <child
+      link="RodaF2" />
+    <axis
+      xyz="1 0 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Alca1">
+    <inertial>
+      <origin
+        xyz="-0.0885003692363609 0.0315828274647633 -1.71114535735262E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.0786405605466979" />
+      <inertia
+        ixx="2.78152492465357E-05"
+        ixy="-7.54013284406261E-11"
+        ixz="3.15610154837557E-10"
+        iyy="0.000329356293997707"
+        iyz="1.00658694493981E-12"
+        izz="0.000344978544619771" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/Alca1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/Alca1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="alcafixa1"
+    type="fixed">
+    <origin
+      xyz="0.002581 -0.66 -0.011674"
+      rpy="-3.1416 0 0" />
+    <parent
+      link="corpo" />
+    <child
+      link="Alca1" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Alca2">
+    <inertial>
+      <origin
+        xyz="-3.69236361430492E-07 0.0315828274647621 -1.71114220015589E-10"
+        rpy="0 0 0" />
+      <mass
+        value="0.0786405605466976" />
+      <inertia
+        ixx="2.78152492465357E-05"
+        ixy="-7.54013308839736E-11"
+        ixz="3.1561015702756E-10"
+        iyy="0.000329356293997706"
+        iyz="1.00658692723597E-12"
+        izz="0.00034497854461977" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/Alca2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.501960784313725 0.501960784313725 0.501960784313725 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/Alca2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="alcafixa2"
+    type="fixed">
+    <origin
+      xyz="-0.085919 -0.26 -0.011674"
+      rpy="0 0 0" />
+    <parent
+      link="corpo" />
+    <child
+      link="Alca2" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="RodaB1">
+    <inertial>
+      <origin
+        xyz="0.0268128447902884 -0.0497671963283731 1.44827982384577E-07"
+        rpy="0 0 0" />
+      <mass
+        value="1.11891461916953" />
+      <inertia
+        ixx="0.00058123900459818"
+        ixy="2.33039359792154E-05"
+        ixz="-3.98329056463793E-09"
+        iyy="0.000767935830161438"
+        iyz="-2.41929146907131E-09"
+        izz="0.000872015950337573" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaB1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaB1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eixoB1"
+    type="revolute">
+    <origin
+      xyz="0.28091 -0.60732 -0.23867"
+      rpy="1.5708 0 0" />
+    <parent
+      link="corpo" />
+    <child
+      link="RodaB1" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="RodaB2">
+    <inertial>
+      <origin
+        xyz="-0.0155371552212751 -0.0497671963283732 0.0300501448279821"
+        rpy="0 0 0" />
+      <mass
+        value="1.11891461916965" />
+      <inertia
+        ixx="0.000581239004598237"
+        ixy="2.33039361380988E-05"
+        ixz="-3.98336471160395E-09"
+        iyy="0.000767943704580933"
+        iyz="-2.41929148474213E-09"
+        izz="0.000872023824757086" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaB2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.827450980392157 0.83921568627451 0.827450980392157 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/RodaB2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="eixoB2"
+    type="revolute">
+    <origin
+      xyz="0.32543 -0.28995 -0.23867"
+      rpy="1.5708 0 0" />
+    <parent
+      link="corpo" />
+    <child
+      link="RodaB2" />
+    <axis
+      xyz="0 1 0" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="barra_vertical">
+    <inertial>
+      <origin
+        xyz="0.677075466810363 2.38697950294409E-15 4.9960036108132E-16"
+        rpy="0 0 0" />
+      <mass
+        value="46.9865733241111" />
+      <inertia
+        ixx="0.0341531133134682"
+        ixy="-2.58890846376507E-14"
+        ixz="-5.71006794466207E-15"
+        iyy="7.2189996525033"
+        iyz="-1.3523770690007E-08"
+        izz="7.21873579285521" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/barra_vertical.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.776470588235294 0.756862745098039 0.737254901960784 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/barra_vertical.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="junta_fixa_vertical"
+    type="fixed">
+    <origin
+      xyz="-0.14442 -0.46 0.12833"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="corpo" />
+    <child
+      link="barra_vertical" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="barra_horizontal">
+    <inertial>
+      <origin
+        xyz="0 5.55111512312578E-17 0"
+        rpy="0 0 0" />
+      <mass
+        value="51.1019315014549" />
+      <inertia
+        ixx="17.0474712709387"
+        ixy="5.33186613133201E-14"
+        ixz="1.88213533724175E-28"
+        iyy="0.0269882075742058"
+        iyz="-6.01026447317545E-14"
+        izz="17.0474712709387" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/barra_horizontal.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.647058823529412 0.619607843137255 0.588235294117647 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://modelagem3/meshes/barra_horizontal.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="junta_horizontal"
+    type="prismatic">
+    <origin
+      xyz="1.343 0 0"
+      rpy="0 -1.5708 0" />
+    <parent
+      link="barra_vertical" />
+    <child
+      link="barra_horizontal" />
+    <axis
+      xyz="0 0 1" />
+    <limit
+      lower="0"
+      upper="0"
+      effort="0"
+      velocity="0" />
+  </joint>
+</robot>
