@@ -260,7 +260,7 @@
   </joint>
   <gazebo>
   <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-    <robotNamespace>/MYROBOT</robotNamespace>
+    <robotNamespace>/modelagem3</robotNamespace>
     <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
   </plugin>
 </gazebo>
@@ -285,10 +285,5 @@
       <mechanicalReduction>1</mechanicalReduction>
     </actuator>
   </transmission>
-  <gazebo>
-  <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
-  <robotNamespace>/modelagem3</robotNamespace>
-  </plugin>
-</gazebo>
 </robot>
 
